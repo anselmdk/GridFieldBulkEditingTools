@@ -87,7 +87,7 @@
 						cacheBuster = new Date().getTime() + '_' + $(this).attr('name');
 						data = $(this).serialize();
 						$.ajax({
-							url: url + '?cacheBuster=' + cacheBuster,
+							url: url + '&cacheBuster=' + cacheBuster,
 							data: data,
 							type: "POST",
 							context: $(this)
@@ -141,7 +141,7 @@
 						var data = $(this).serialize();
 						
 						$.ajax({
-							url: url + '?cacheBuster=' + cacheBuster,
+							url: url + '&cacheBuster=' + cacheBuster,
 							data: data,
 							type: "POST",
 							context: $(this)
